@@ -1,10 +1,10 @@
 'use client'
 import SideNav from '@/app/ui/notas/sidenav';
-import { FormContextProvider } from './FormStateContext';
+
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <FormContextProvider>
+   
       <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
         <div className="w-full flex-none md:w-64">
           <SideNav />
@@ -13,6 +13,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {children}
         </div>
       </div>
-    </FormContextProvider>
+    
   );
 }

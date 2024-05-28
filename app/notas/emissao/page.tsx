@@ -7,7 +7,7 @@ export default async function Page() {
 
  
   return (
-    <main>
+    <>
       <Breadcrumbs
         breadcrumbs={[
           { label: 'Nota Fiscal', href: '/notas/emissao' },
@@ -19,6 +19,6 @@ export default async function Page() {
         ]}
       />
       <FormEmitir />
-    </main>
+    </>
   );
 }
